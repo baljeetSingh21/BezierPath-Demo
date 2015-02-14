@@ -10,15 +10,23 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    self.view1.style=checkMarkStyle;
+    self.view2.style=ErrorMarkStyle;
+    self.view3.style=INFOMARK;
+    self.view4.style=NOTICEMARK;
+    self.view5.style=EDITMARK;
+    self.view6.style=WARNINGMARK;
 
+    
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum ShapeSelection : NSUInteger {
+    checkMarkStyle= 0,
+    ErrorMarkStyle = 1,
+    NOTICEMARK = 2,
+    INFOMARK = 3,
+    EDITMARK = 4,
+    WARNINGMARK = 5,
+} ShapeSelection;
+
 
 @interface Accessory : UIView
-
+@property(assign)int style;
 @end

@@ -14,6 +14,7 @@
 		84CC9E9B1A8487DF00B94777 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC9E9A1A8487DF00B94777 /* Images.xcassets */; };
 		84CC9E9E1A8487DF00B94777 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CC9E9C1A8487DF00B94777 /* LaunchScreen.xib */; };
 		84CC9EAA1A8487DF00B94777 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC9EA91A8487DF00B94777 /* demoTests.m */; };
+		84CC9EB51A84AA8200B94777 /* Accessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC9EB41A84AA8200B94777 /* Accessory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		84CC9E8A1A8487DF00B94777 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CC9E8A1A8487DF00B94777 /* BezierPathDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierPathDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC9E8E1A8487DF00B94777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CC9E8F1A8487DF00B94777 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84CC9E911A8487DF00B94777 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,9 +38,11 @@
 		84CC9E981A8487DF00B94777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84CC9E9A1A8487DF00B94777 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84CC9E9D1A8487DF00B94777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		84CC9EA31A8487DF00B94777 /* demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CC9EA31A8487DF00B94777 /* BezierPathDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC9EA81A8487DF00B94777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CC9EA91A8487DF00B94777 /* demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoTests.m; sourceTree = "<group>"; };
+		84CC9EB31A84AA8200B94777 /* Accessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessory.h; sourceTree = "<group>"; };
+		84CC9EB41A84AA8200B94777 /* Accessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		84CC9E811A8487DF00B94777 = {
 			isa = PBXGroup;
 			children = (
+				84CC9EB31A84AA8200B94777 /* Accessory.h */,
+				84CC9EB41A84AA8200B94777 /* Accessory.m */,
 				84CC9E8C1A8487DF00B94777 /* demo */,
 				84CC9EA61A8487DF00B94777 /* demoTests */,
 				84CC9E8B1A8487DF00B94777 /* Products */,
@@ -72,8 +77,8 @@
 		84CC9E8B1A8487DF00B94777 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84CC9E8A1A8487DF00B94777 /* demo.app */,
-				84CC9EA31A8487DF00B94777 /* demoTests.xctest */,
+				84CC9E8A1A8487DF00B94777 /* BezierPathDemo.app */,
+				84CC9EA31A8487DF00B94777 /* BezierPathDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84CC9E891A8487DF00B94777 /* demo */ = {
+		84CC9E891A8487DF00B94777 /* BezierPathDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84CC9EAD1A8487DF00B94777 /* Build configuration list for PBXNativeTarget "demo" */;
+			buildConfigurationList = 84CC9EAD1A8487DF00B94777 /* Build configuration list for PBXNativeTarget "BezierPathDemo" */;
 			buildPhases = (
 				84CC9E861A8487DF00B94777 /* Sources */,
 				84CC9E871A8487DF00B94777 /* Frameworks */,
@@ -134,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = demo;
+			name = BezierPathDemo;
 			productName = demo;
-			productReference = 84CC9E8A1A8487DF00B94777 /* demo.app */;
+			productReference = 84CC9E8A1A8487DF00B94777 /* BezierPathDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84CC9EA21A8487DF00B94777 /* demoTests */ = {
+		84CC9EA21A8487DF00B94777 /* BezierPathDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84CC9EB01A8487DF00B94777 /* Build configuration list for PBXNativeTarget "demoTests" */;
+			buildConfigurationList = 84CC9EB01A8487DF00B94777 /* Build configuration list for PBXNativeTarget "BezierPathDemoTests" */;
 			buildPhases = (
 				84CC9E9F1A8487DF00B94777 /* Sources */,
 				84CC9EA01A8487DF00B94777 /* Frameworks */,
@@ -152,9 +157,9 @@
 			dependencies = (
 				84CC9EA51A8487DF00B94777 /* PBXTargetDependency */,
 			);
-			name = demoTests;
+			name = BezierPathDemoTests;
 			productName = demoTests;
-			productReference = 84CC9EA31A8487DF00B94777 /* demoTests.xctest */;
+			productReference = 84CC9EA31A8487DF00B94777 /* BezierPathDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84CC9E851A8487DF00B94777 /* Build configuration list for PBXProject "demo" */;
+			buildConfigurationList = 84CC9E851A8487DF00B94777 /* Build configuration list for PBXProject "BezierPathDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84CC9E891A8487DF00B94777 /* demo */,
-				84CC9EA21A8487DF00B94777 /* demoTests */,
+				84CC9E891A8487DF00B94777 /* BezierPathDemo */,
+				84CC9EA21A8487DF00B94777 /* BezierPathDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +226,7 @@
 			files = (
 				84CC9E961A8487DF00B94777 /* ViewController.m in Sources */,
 				84CC9E931A8487DF00B94777 /* AppDelegate.m in Sources */,
+				84CC9EB51A84AA8200B94777 /* Accessory.m in Sources */,
 				84CC9E901A8487DF00B94777 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +244,7 @@
 /* Begin PBXTargetDependency section */
 		84CC9EA51A8487DF00B94777 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84CC9E891A8487DF00B94777 /* demo */;
+			target = 84CC9E891A8487DF00B94777 /* BezierPathDemo */;
 			targetProxy = 84CC9EA41A8487DF00B94777 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BezierPathDemo;
 			};
 			name = Debug;
 		};
@@ -355,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BezierPathDemo;
 			};
 			name = Release;
 		};
@@ -373,7 +379,7 @@
 				);
 				INFOPLIST_FILE = demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BezierPathDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
 			};
 			name = Debug;
@@ -388,7 +394,7 @@
 				);
 				INFOPLIST_FILE = demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BezierPathDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
 			};
 			name = Release;
@@ -396,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84CC9E851A8487DF00B94777 /* Build configuration list for PBXProject "demo" */ = {
+		84CC9E851A8487DF00B94777 /* Build configuration list for PBXProject "BezierPathDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CC9EAB1A8487DF00B94777 /* Debug */,
@@ -405,21 +411,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84CC9EAD1A8487DF00B94777 /* Build configuration list for PBXNativeTarget "demo" */ = {
+		84CC9EAD1A8487DF00B94777 /* Build configuration list for PBXNativeTarget "BezierPathDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CC9EAE1A8487DF00B94777 /* Debug */,
 				84CC9EAF1A8487DF00B94777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		84CC9EB01A8487DF00B94777 /* Build configuration list for PBXNativeTarget "demoTests" */ = {
+		84CC9EB01A8487DF00B94777 /* Build configuration list for PBXNativeTarget "BezierPathDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CC9EB11A8487DF00B94777 /* Debug */,
 				84CC9EB21A8487DF00B94777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
